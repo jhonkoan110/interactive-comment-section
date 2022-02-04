@@ -1,0 +1,41 @@
+@import './scss/variables.scss';
+
+* {
+  font-family: RubikRegular, 'Roboto', sans-serif;
+  font-size: $fontSize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $veryLightGray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+  font-family: RubikRegular;
+  font-weight: 400;
+  src: url('./assets/fonts/Rubik-Regular.ttf');
+}
+@font-face {
+  font-family: RubikRegular;
+  font-weight: 500;
+  src: url('./assets/fonts/Rubik-Medium.ttf');
+}
+@font-face {
+  font-family: RubikRegular;
+  font-weight: 700;
+  src: url('./assets/fonts/Rubik-Bold.ttf');
+}

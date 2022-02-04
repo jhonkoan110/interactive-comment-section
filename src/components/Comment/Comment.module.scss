@@ -1,0 +1,64 @@
+@import '../../scss/variables.scss';
+
+.container {
+  padding: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  border-radius: 10px;
+  margin: 15px 0 0;
+  box-shadow: 0 0 2px $lightGrayishBlue;
+
+  .count {
+    background-color: $lightGrayishBlue;
+  }
+
+  .content {
+    margin: 0 0 0 15px;
+
+    .contentHeader {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      .commentInfo {
+        display: flex;
+        align-items: center;
+
+        .userAvatar {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: red;
+        }
+
+        .username {
+          margin: 0 0 0 15px;
+          font-weight: 700;
+        }
+        .createdAt {
+          margin: 0 0 0 15px;
+          color: $grayishBlue;
+        }
+      }
+
+      .replyButton {
+        background-color: transparent;
+        color: $moderateBlue;
+        font-weight: 700;
+        text-transform: capitalize;
+        border: 0;
+      }
+    }
+
+    .commentTextConainer {
+      margin: 15px 0 0;
+
+      .commentText {
+        color: $grayishBlue;
+      }
+    }
+  }
+}

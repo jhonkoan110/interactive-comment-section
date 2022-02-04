@@ -1,0 +1,16 @@
+@import '../../scss/variables.scss';
+
+.container {
+  height: 100%;
+  width: $appDesktopWidth;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 100px;
+}
+
+@media screen and (max-width: $appMobileWidth) {
+  .container {
+    background-color: red;
+  }
+}
